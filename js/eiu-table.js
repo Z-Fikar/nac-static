@@ -8,6 +8,7 @@ import {
 } from "./query-assigned-elements-8a604587.js";
 
 const CLASS_NAME = "eiu-table";
+const CONFIF_FILE = "./nac-table.config-d2342d00.js";
 
 const baseStyle = i`
   :host {
@@ -597,7 +598,7 @@ let AndysTable = _decorate(
           static: true,
           key: "getMetaConfig",
           value: function getMetaConfig() {
-            return import("./nac-table.config-d2342d00.js").then(
+            return import(CONFIG_FILE).then(
               (x) => x.config
             );
           },
